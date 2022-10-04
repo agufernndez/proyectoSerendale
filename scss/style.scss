@@ -1,0 +1,135 @@
+@import "variables";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: $blanco;
+    font-family: $grotesk;
+    background-color: $fondo;
+    font-size: 62.5%;
+    // width: 100%;
+    // height: 100vh;
+}
+
+header {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    
+    .headerLogo{
+        font-size: 2rem;
+    }
+
+    .headerNav__ul {
+        display: flex;
+        list-style: none;
+        // width: 40vw;
+    
+        .headerNav__ul-li {
+            padding: 30px;
+    
+            a{
+                text-decoration: none;
+                color: $blanco;
+                font-weight: 400;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .headerRedes {
+        display: flex;
+        list-style: none;
+
+        li {
+            padding: 10px;
+
+        }
+    }
+
+}
+
+main {
+    height: 100vh;
+    .mainDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 140px;
+
+        .titulo {
+            background: $colorGradiente;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-clip: text;
+    
+            font-size: 4rem;
+            font-weight: 600;
+        }
+        .subtitulo {
+            font-size: 4rem;
+            font-weight: 600;
+        }
+    
+        p {
+            width: 720px;
+            padding-top: 40px;
+            font-size: 1.5rem;
+            text-align: center;
+            letter-spacing: 0.72px;
+            line-height: 43px;
+        }
+    }
+
+    .mainDivBoton {
+        position: absolute;
+        top: 550px;
+        left: 38%;
+        width: 450px;
+        display: flex;
+        justify-content: space-between;
+        // porque no quedan centrados???
+
+        .boton {
+            cursor: pointer;
+            background-color: $fondo;
+            height: 70px;
+            width: 180px;
+            // padding: 32px;
+            color: $blanco;
+            border: 2px solid $blanco;
+            font-size: 1.4rem;
+            border-radius: 100px;
+
+            &:hover {
+            background: $colorGradiente;
+            -webkit-background-clip: text;
+            color: transparent;
+            background-clip: text;
+        }
+        }
+
+    }
+
+    figure {
+        .imgPortada {
+            position: absolute;
+            bottom: 0%;
+            width: 100vw;
+            z-index: -1;
+        }
+    }
+}
+
+
+
+
+

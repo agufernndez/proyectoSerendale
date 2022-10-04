@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  color: #FFFFFF;
+  font-family: "Familjen Grotesk", sans-serif;
+  background-color: #1E1E1E;
+  font-size: 62.5%; }
+
+header {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px; }
+  header .headerLogo {
+    font-size: 2rem; }
+  header .headerNav__ul {
+    display: flex;
+    list-style: none; }
+    header .headerNav__ul .headerNav__ul-li {
+      padding: 30px; }
+      header .headerNav__ul .headerNav__ul-li a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 1rem; }
+  header .headerRedes {
+    display: flex;
+    list-style: none; }
+    header .headerRedes li {
+      padding: 10px; }
+
+main {
+  height: 100vh; }
+  main .mainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 140px; }
+    main .mainDiv .titulo {
+      background: linear-gradient(90deg, #FF3BFF 0%, #ECBFBF 38.02%, #5C24FF 75.83%, #D94FD5 100%);
+      -webkit-background-clip: text;
+      color: transparent;
+      background-clip: text;
+      font-size: 4rem;
+      font-weight: 600; }
+    main .mainDiv .subtitulo {
+      font-size: 4rem;
+      font-weight: 600; }
+    main .mainDiv p {
+      width: 720px;
+      padding-top: 40px;
+      font-size: 1.5rem;
+      text-align: center;
+      letter-spacing: 0.72px;
+      line-height: 43px; }
+  main .mainDivBoton {
+    position: absolute;
+    top: 550px;
+    left: 38%;
+    width: 450px;
+    display: flex;
+    justify-content: space-between; }
+    main .mainDivBoton .boton {
+      cursor: pointer;
+      background-color: #1E1E1E;
+      height: 70px;
+      width: 180px;
+      color: #FFFFFF;
+      border: 2px solid #FFFFFF;
+      font-size: 1.4rem;
+      border-radius: 100px; }
+      main .mainDivBoton .boton:hover {
+        background: linear-gradient(90deg, #FF3BFF 0%, #ECBFBF 38.02%, #5C24FF 75.83%, #D94FD5 100%);
+        -webkit-background-clip: text;
+        color: transparent;
+        background-clip: text; }
+  main figure .imgPortada {
+    position: absolute;
+    bottom: 0%;
+    width: 100vw;
+    z-index: -1; }
