@@ -33,6 +33,7 @@ header {
     .headerRedes {
         display: flex;
         list-style: none;
+        cursor: pointer;
 
         li {
             padding: 10px;
@@ -129,6 +130,7 @@ main {
         }
 
         .headerNav__ul {
+            cursor: pointer;
             display: flex;
             list-style: none;
             width: 40vw;
@@ -146,7 +148,7 @@ main {
                     font-weight: 400;
                     font-size: 1.1rem;
                     &:hover{
-                        text-decoration:underline #D94FD5;
+                        text-decoration: underline #D94FD5;
                     }
                 }
             }

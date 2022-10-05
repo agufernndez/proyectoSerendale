@@ -22,7 +22,8 @@ header {
     display: none; }
   header .headerRedes {
     display: flex;
-    list-style: none; }
+    list-style: none;
+    cursor: pointer; }
     header .headerRedes li {
       padding: 10px; }
 
@@ -83,6 +84,7 @@ main {
   header .headerLogo {
     font-size: 2rem; }
   header .headerNav__ul {
+    cursor: pointer;
     display: flex;
     list-style: none;
     width: 40vw;
