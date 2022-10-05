@@ -11,37 +11,23 @@ body {
     font-family: $grotesk;
     background-color: $fondo;
     font-size: 62.5%;
-    // width: 100%;
-    // height: 100vh;
 }
 
+// MOBILE FIRST
 header {
-    position: absolute;
     width: 100vw;
+    padding: 20px;
+    position: absolute;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
     
     .headerLogo{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .headerNav__ul {
-        display: flex;
-        list-style: none;
-        // width: 40vw;
-    
-        .headerNav__ul-li {
-            padding: 30px;
-    
-            a{
-                text-decoration: none;
-                color: $blanco;
-                font-weight: 400;
-                font-size: 1rem;
-            }
-        }
+        display: none;
     }
 
     .headerRedes {
@@ -63,50 +49,49 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 140px;
+        padding-top: 15vh;
 
         .titulo {
             background: $colorGradiente;
             -webkit-background-clip: text;
             color: transparent;
             background-clip: text;
-    
-            font-size: 4rem;
+            font-size: 2.5rem;
             font-weight: 600;
         }
         .subtitulo {
-            font-size: 4rem;
+            font-size: 2.5rem;
             font-weight: 600;
         }
     
         p {
-            width: 720px;
-            padding-top: 40px;
-            font-size: 1.5rem;
+            width: 80vw;
+            max-width: 810px;
+            padding-top: 2rem;
+            font-size: 1rem;
             text-align: center;
             letter-spacing: 0.72px;
-            line-height: 43px;
+            line-height: 23px;
         }
     }
 
     .mainDivBoton {
-        position: absolute;
-        top: 550px;
-        left: 38%;
-        width: 450px;
+        margin: 70px auto 0;
+        height: 170px;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        // porque no quedan centrados???
+        align-items: center;
 
         .boton {
             cursor: pointer;
             background-color: $fondo;
             height: 70px;
-            width: 180px;
+            width: 160px;
             // padding: 32px;
             color: $blanco;
             border: 2px solid $blanco;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             border-radius: 100px;
 
             &:hover {
@@ -114,7 +99,9 @@ main {
             -webkit-background-clip: text;
             color: transparent;
             background-clip: text;
-        }
+            }
+        
+
         }
 
     }
@@ -130,6 +117,104 @@ main {
 }
 
 
+// MEDIA QUERIES
 
+// TABLET************************************************
+@media screen and(min-width: 768px) {
+    header {
+        // padding: 20px 0 0;
 
+        .headerLogo{
+            font-size: 2rem;
+        }
 
+        .headerNav__ul {
+            display: flex;
+            list-style: none;
+            width: 40vw;
+            flex-wrap: wrap;
+            width: 400px;
+            justify-content: center;
+            align-items: center;
+        
+            .headerNav__ul-li {
+                padding: 15px;
+
+                a{
+                    text-decoration: none;
+                    color: $blanco;
+                    font-weight: 400;
+                    font-size: 1.1rem;
+                    &:hover{
+                        text-decoration:underline #D94FD5;
+                    }
+                }
+            }
+        }
+
+    }
+    
+    main {
+        .mainDiv {
+            padding-top: 20vh;
+    
+            .titulo {
+                font-size: 3.5rem;
+            }
+            .subtitulo {
+                font-size: 3.5rem;
+            }
+        
+            p {
+                font-size: 1.4rem;
+                line-height: 30px;
+            }
+        }
+    
+        .mainDivBoton {
+            height: 170px;
+            width: 400px;
+            flex-direction: row;
+    
+            .boton {
+                height: 80px;
+                width: 180px;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}
+
+// DESKTOP************************************************
+@media screen and (min-width: 1200px) {
+    header {
+
+            .headerNav__ul {
+                flex-direction: row;
+                flex-wrap: nowrap;
+                width: 40vw;
+                // width: ;
+                justify-content: center;
+                align-items: center;
+            
+                .headerNav__ul-li {
+                    padding: 30px;
+                    text-align: center;
+                }
+            }
+        
+        }
+        
+        main {
+            .mainDiv {        
+                .titulo {
+                    font-size: 4rem;
+                }
+                .subtitulo {
+                    font-size: 4rem;
+                }
+            }
+        
+            
+        }
+}

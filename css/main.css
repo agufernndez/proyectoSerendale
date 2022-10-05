@@ -10,24 +10,16 @@ body {
   font-size: 62.5%; }
 
 header {
-  position: absolute;
   width: 100vw;
+  padding: 20px;
+  position: absolute;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  padding: 20px; }
+  align-items: center; }
   header .headerLogo {
-    font-size: 2rem; }
+    font-size: 1.5rem; }
   header .headerNav__ul {
-    display: flex;
-    list-style: none; }
-    header .headerNav__ul .headerNav__ul-li {
-      padding: 30px; }
-      header .headerNav__ul .headerNav__ul-li a {
-        text-decoration: none;
-        color: #FFFFFF;
-        font-weight: 400;
-        font-size: 1rem; }
+    display: none; }
   header .headerRedes {
     display: flex;
     list-style: none; }
@@ -41,39 +33,40 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 140px; }
+    padding-top: 15vh; }
     main .mainDiv .titulo {
       background: linear-gradient(90deg, #FF3BFF 0%, #ECBFBF 38.02%, #5C24FF 75.83%, #D94FD5 100%);
       -webkit-background-clip: text;
       color: transparent;
       background-clip: text;
-      font-size: 4rem;
+      font-size: 2.5rem;
       font-weight: 600; }
     main .mainDiv .subtitulo {
-      font-size: 4rem;
+      font-size: 2.5rem;
       font-weight: 600; }
     main .mainDiv p {
-      width: 720px;
-      padding-top: 40px;
-      font-size: 1.5rem;
+      width: 80vw;
+      max-width: 810px;
+      padding-top: 2rem;
+      font-size: 1rem;
       text-align: center;
       letter-spacing: 0.72px;
-      line-height: 43px; }
+      line-height: 23px; }
   main .mainDivBoton {
-    position: absolute;
-    top: 550px;
-    left: 38%;
-    width: 450px;
+    margin: 70px auto 0;
+    height: 170px;
     display: flex;
-    justify-content: space-between; }
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
     main .mainDivBoton .boton {
       cursor: pointer;
       background-color: #1E1E1E;
       height: 70px;
-      width: 180px;
+      width: 160px;
       color: #FFFFFF;
       border: 2px solid #FFFFFF;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       border-radius: 100px; }
       main .mainDivBoton .boton:hover {
         background: linear-gradient(90deg, #FF3BFF 0%, #ECBFBF 38.02%, #5C24FF 75.83%, #D94FD5 100%);
@@ -85,3 +78,56 @@ main {
     bottom: 0%;
     width: 100vw;
     z-index: -1; }
+
+@media screen and (min-width: 768px) {
+  header .headerLogo {
+    font-size: 2rem; }
+  header .headerNav__ul {
+    display: flex;
+    list-style: none;
+    width: 40vw;
+    flex-wrap: wrap;
+    width: 400px;
+    justify-content: center;
+    align-items: center; }
+    header .headerNav__ul .headerNav__ul-li {
+      padding: 15px; }
+      header .headerNav__ul .headerNav__ul-li a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 400;
+        font-size: 1.1rem; }
+        header .headerNav__ul .headerNav__ul-li a:hover {
+          text-decoration: underline #D94FD5; }
+  main .mainDiv {
+    padding-top: 20vh; }
+    main .mainDiv .titulo {
+      font-size: 3.5rem; }
+    main .mainDiv .subtitulo {
+      font-size: 3.5rem; }
+    main .mainDiv p {
+      font-size: 1.4rem;
+      line-height: 30px; }
+  main .mainDivBoton {
+    height: 170px;
+    width: 400px;
+    flex-direction: row; }
+    main .mainDivBoton .boton {
+      height: 80px;
+      width: 180px;
+      font-size: 1.6rem; } }
+
+@media screen and (min-width: 1200px) {
+  header .headerNav__ul {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 40vw;
+    justify-content: center;
+    align-items: center; }
+    header .headerNav__ul .headerNav__ul-li {
+      padding: 30px;
+      text-align: center; }
+  main .mainDiv .titulo {
+    font-size: 4rem; }
+  main .mainDiv .subtitulo {
+    font-size: 4rem; } }
