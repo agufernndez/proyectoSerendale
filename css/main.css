@@ -87,7 +87,6 @@ main {
     cursor: pointer;
     display: flex;
     list-style: none;
-    width: 40vw;
     flex-wrap: wrap;
     width: 400px;
     justify-content: center;
